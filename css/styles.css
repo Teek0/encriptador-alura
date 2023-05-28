@@ -1,0 +1,173 @@
+/*-----STANDARD------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+html,body{
+    background: #F3F5FC;
+    height: 100%;
+}
+button{
+    padding: 20px 0;
+    margin: 10px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background: none;
+    cursor: pointer;
+    width: 70%;
+}
+/*INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT*/
+.mainSpace{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#logoAlura{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.inputArea{
+    height: 80%;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inputText{
+    background-color:#F3F5FC;
+    resize: none;
+    font-size: 32px;
+    color: #0A3871;
+    border: none;
+    height: 60%;
+    width: 100%;
+    margin: 70px 0 0;
+}
+::placeholder{
+    color: #0A3871;
+    opacity: 0.5;
+}
+.legendTextArea{
+    font-size: 12px;
+    color:#495057;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.legendTextArea img{
+    margin-right: 5px;
+}
+.botonesArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blueBtn{
+    background-color: #0A3871;
+    color: white;
+    width: 35%;
+}
+.lightBlueBtn{
+    background-color: #D8DFE8;
+    width: 35%;
+}
+/*RESULTS-RESULTS-RESULTS-RESULTS-RESULTS-RESULTS-RESULTS-RESULTS*/
+.tarjetaTexto{
+    background-color: white;
+    border-radius: 24px;
+    height: 80%;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 1px 24px #D0D1D7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.esperando{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.esperando img{
+    width: 80%;
+}
+.esperando h1, .esperando p{
+    margin: 1% 10%;
+    text-align: center;
+}
+.resultado{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.textoResultante{
+    color:#495057;
+    margin: 30px 20px;
+    height: 80%;
+    font-size: 24px;
+    overflow: auto;
+}
+/*FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER*/
+/* .footerInfo{
+    background-color: #0A3871;
+    width: 100%;
+    height: 4%;
+    color:white;
+    display: flex;
+} */
+/*-----------------------------*/
+.hide{
+    display:none;
+}
+@media screen and (max-width: 920px) {
+    .mainSpace{
+        flex-direction: column;
+        height: auto;
+        background-color: pink;
+    }
+    .inputArea{
+        width: 90%;
+        height: auto;
+        background-color: aquamarine;
+        justify-content: flex-start;
+    }
+    .inputText{
+        height: 500px;
+        width: 100%;
+    }
+    .tarjetaTexto{
+        width: 90%;
+
+    }
+    .esperando img{
+        display:none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .inputText{
+        height: 400px;
+        width: 100%;
+    }
+    .botonesArea{
+        flex-direction: column;
+    }
+    .blueBtn,.lightBlueBtn{
+        width: 90%;
+    }
+}
