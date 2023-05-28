@@ -122,6 +122,9 @@ button{
     font-size: 24px;
     overflow: auto;
 }
+.btnCopy:hover, .blueBtn:hover, .lightBlueBtn:hover{
+    font-weight: bold;
+}
 /*FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER-FOOTER*/
 /* .footerInfo{
     background-color: #0A3871;

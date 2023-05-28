@@ -61,3 +61,8 @@ function desencriptacion(){
         document.querySelector(".resultado").classList.remove("hide");
     }
 }
+function copiarTexto(){
+    var texto=document.querySelector(".textoResultante").innerText;
+    navigator.clipboard.writeText(texto);
+}
+
