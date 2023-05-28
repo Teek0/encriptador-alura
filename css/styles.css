@@ -29,7 +29,6 @@ button{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 #logoAlura{
     position: absolute;
@@ -139,12 +138,10 @@ button{
     .mainSpace{
         flex-direction: column;
         height: auto;
-        background-color: pink;
     }
     .inputArea{
         width: 90%;
         height: auto;
-        background-color: aquamarine;
         justify-content: flex-start;
     }
     .inputText{
